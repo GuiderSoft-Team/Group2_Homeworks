@@ -1,21 +1,39 @@
 package day11;
 
+import java.util.Scanner;
+
 public class Dortgen {
-    public static void main(String[] args) {
-        //TODO: Dortgen programını geliştiriniz.
-        /*
-            1. Klavyeden 3 adet girdi alınacaktır.
-                kenar:int       -> Karenin kenarı
-                kisaKenar:int   -> Dikdörtgenin kısa kenarı
-                uzunKenar:int   -> Dikdörtgenin uzun kenarı
-            2. alanHesapla(int k1, int k2):int  -> Metodu geliştirilecektir.
-            3. Tek bir metot (alanHesapla) iki kez çağırılarak hem karenin hem de
-            dikdörtgenin alanı hesaplanacaktır.
-            4. cevreHesapla(int k1,int k2):int  -> Metodu geliştirilecektir.
-            5. Tek bir metot (cevreHesapla) iki kez çağırılarak hem karenin hem de
-            dikdörtgenin çevresi hesaplanacaktır.
-            6. Elde edilen toplam alan hesaplanıp ekranda gösterilecektir.
-            7. Elde edilen toplam çevre ekranda gösterilecektir.
-         */
+        public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            System.out.print("Karenin Kenari: ");
+            int kenar = input.nextInt();
+            System.out.print("Dikdortgenin Uzun Kenari:");
+            int uzunKenar = input.nextInt();
+            System.out.print("Dikdortgenin Kisa Kenari:");
+            int kisaKenar = input.nextInt();
+
+            int kareninAlani = alanHesapla(kenar, kenar);
+            int dikdortgeninAlani = alanHesapla(uzunKenar, kisaKenar);
+
+            int kareninCevresi = cevreHesapla(kenar, kenar);
+            int dikdortgeninCevresi = cevreHesapla(uzunKenar, kisaKenar);
+
+
+            int toplamAlan=kareninAlani+dikdortgeninAlani;
+            int toplamCevre=kareninCevresi+dikdortgeninCevresi;
+            System.out.println("Toplam Alan: "+toplamAlan);
+            System.out.println("Toplam Cevre: "+toplamCevre);
+
+        }
+
+        public static int alanHesapla(int kenar1, int kenar2) {
+            return kenar1*kenar2;
+        }
+        public static int cevreHesapla(int kenar1, int kenar2) {
+            return (kenar1+kenar2)*2;
+
+
     }
+
+
 }
