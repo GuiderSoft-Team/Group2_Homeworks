@@ -1,5 +1,7 @@
 package day11;
 
+import java.util.Scanner;
+
 public class Dortgen {
     public static void main(String[] args) {
         //TODO: Dortgen programını geliştiriniz.
@@ -17,5 +19,35 @@ public class Dortgen {
             6. Elde edilen toplam alan hesaplanıp ekranda gösterilecektir.
             7. Elde edilen toplam çevre ekranda gösterilecektir.
          */
+
+
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Lutfen karenin kenarini giriniz.");
+        int kenar1= scan.nextInt();
+        System.out.println("Lutfen dikdortgenin uzun kenarini giriniz.");
+        int uzunKenar= scan.nextInt();
+        System.out.println("Lutfen dikdortgenin kisa kenarini giriniz.");
+        int kisaKenar= scan.nextInt();
+
+        int alanA=alanHesapla(kenar1);
+        System.out.println("Karenin Alani"+alanA);
+        int alanB=alanHesapla(kisaKenar*uzunKenar);
+        System.out.println("Dikdortgenin Alani"+alanB);
+
+        int cevreX=cevreHesapla(kenar1);
+        System.out.println("KareninCevresi"+cevreX);
+        int cevreY=cevreHesapla(kisaKenar*uzunKenar);
+        System.out.println("DikdortgeninCevresi"+cevreY);
+
     }
+      public static int alanHesapla(int kenar1){
+       int kareAlan=kenar1;
+      return kenar1;
+
 }
+  public static int cevreHesapla(int kenar) {
+        return 0;
+  }
+
+
+  }
