@@ -36,15 +36,16 @@ public class Dortgen {
         int K_Alan=AlanHesapla(Kenar,Kenar);
         int D_Cevre=CevreHesapla(KisaKenar,UzunKenar);
         int K_Cevre=CevreHesapla(Kenar,Kenar);
-
-
+        int toplamAlan=K_Alan+D_Alan;
+        int toplamCevre=K_Cevre+D_Cevre;
 
         System.out.println("Karenin Alanı : "+K_Alan);
         System.out.println("Karenin Çevresi : "+K_Cevre);
 
         System.out.println("Dikdörgenin Alanı : "+D_Alan);
         System.out.println("Dikdörgenin Çevresi : "+D_Cevre);
-
+        System.out.println("Alanlar Toplamı ="+toplamAlan);
+        System.out.println("Çevreler Toplamı ="+toplamCevre);
 
 
     }
