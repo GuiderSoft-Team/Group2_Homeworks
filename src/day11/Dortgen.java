@@ -38,15 +38,17 @@ public class Dortgen {
         int cevre2=cevreHesapla(kisaKenar,uzunKenar);
         System.out.println("Dikdörtgenin çevresi:" +cevre2);
 
+        System.out.println("Kare ve dikdörtgen toplam alanı: " +(alan1+alan2));
+        System.out.println("Kare ve dikdörtgenin toplam çevresi: " +(cevre1+cevre2));
+
 
     }
-    public static int alanHesapla (int kenar1, int kenar2)
+    public static int alanHesapla (int k1, int k2)
     {
-        return kenar1*kenar2;
+        return k1*k2;
     }
-        public static int cevreHesapla(int kisaKenar,int uzunKenar){
-            return 2 * (kisaKenar + uzunKenar);
-
+        public static int cevreHesapla(int k1,int k2){
+            return 2 * (k1 + k2);
         }
 
     }
