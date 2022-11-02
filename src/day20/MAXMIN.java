@@ -21,8 +21,8 @@ public class MAXMIN {
                 minSayi = arr[i];
             }
         }
-        System.out.println("En buyuk sayi" + maxSayi);
-        System.out.println("Enkucuk sayi" + minSayi);
+        System.out.println("En buyuk sayi"  + maxSayi);
+        System.out.println("Enkucuk sayi"  + minSayi);
     }
 
 }
