@@ -19,7 +19,7 @@ public class Task1 {
             if (dizi[i]<en_kucuk) en_kucuk =dizi[i];
 
         }
-        System.out.println("En Büyük Eleman : "+en_buyuk);
-        System.out.println("En Küçük Eleman : "+en_kucuk);
+        System.out.println("En Büyük Eleman  : "+en_buyuk);
+        System.out.println("En Küçük Eleman  : "+en_kucuk);
     }
 }
