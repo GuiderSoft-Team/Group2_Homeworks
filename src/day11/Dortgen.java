@@ -36,6 +36,7 @@ public class Dortgen {
 
         System.out.println("Toplam alan: " + (kareAlan + dikdortgenAlan));
         System.out.println("Toplam çevre: " + (kareCevre + dikdortgenCevre));
+        System.out.printf("Toplam alan %d\tToplam çevre %d\n",kareAlan,kareCevre);
 
     }
 
