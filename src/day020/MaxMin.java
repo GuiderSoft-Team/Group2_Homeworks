@@ -14,8 +14,8 @@ public class MaxMin {
         System.out.println(sayilar);
         for (int i = 0; i < 10; i++) {
             System.out.println((i+1)+"'inci sayıyı giriniz:");
-                Scanner input=new Scanner (System.in);
-                sayilar[i]=input.nextInt();
+            Scanner input=new Scanner (System.in);
+            sayilar[i]=input.nextInt();
         }
         System.out.println("Dizinin en küçük ve en büyük sayıları hesaplanıyor...");
         int min=sayilar[0]; int max=sayilar[0];
@@ -26,9 +26,10 @@ public class MaxMin {
             if(sayilar[i]>=max){
                 max=sayilar[i];
             }
-                    }
+        }
         System.out.println("En küçük sayı:" +min );
         System.out.println("En büyük sayi:"+max);
 
     }
 }
+
