@@ -7,7 +7,20 @@ public class MaxMin {
     En büyük ve en küçük sayıları bulup ekranda gösteren Java programını yazınız.
 
      */
-        int[] sayilar={25,42,31,69,83,76,11,19,95,56};
+        int[] sayilar=new int[10];
+        Scanner input = new Scanner(System.in);
+
+
+        for (int i = 0; i <sayilar.length; i++) {
+
+            for (int j = 1; j <=10; j++) {
+                System.out.print(j+". sayıyı giriniz: ");
+                i=j-1;
+                sayilar[i]= input.nextInt();
+            }
+
+            break;
+        }
         int enbuyuksayi=sayilar[0];
         int enkucuksayi=sayilar[0];
 
