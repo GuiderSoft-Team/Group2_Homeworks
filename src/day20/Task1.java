@@ -9,7 +9,7 @@ public class Task1 {
         Scanner input=new Scanner(System.in);
         int i,en_buyuk,en_kucuk;
         for ( i = 0; i < 10; i++) {
-            System.out.print("Lütfen Rasgele Sayı Giriniz : ");
+            System.out.print("Lütfen "+(i+1) +".Sayı Giriniz : ");
             dizi[i]=input.nextInt();
         }
         en_kucuk=dizi[0];
