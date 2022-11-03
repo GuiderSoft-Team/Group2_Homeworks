@@ -16,7 +16,7 @@ public class Task {
         String[ ] ogrenci={"Ahmet","Şengül","Hakan","Feraye","Cengiz","Salih","Sezen","Hasan","Sezgin" };
         String[] bolum={"Fizik","Kimya","Matematik","Biyoloji","Felsefe","Elektronik","Bilgisayar","Fizik","Biyoloji" };
         System.out.println(" ADI\t\tBÖLÜMÜ");
-        System.out.println("-".repeat(20));
+        System.out.println("-".repeat(21));
         for (int i = 0; i < 9; i++) {
 
             System.out.print((i+1)+". "+ ogrenci[i] +"\t");
