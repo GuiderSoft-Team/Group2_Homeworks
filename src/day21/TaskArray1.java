@@ -1,6 +1,6 @@
 package day21;
 
-public class TaskArray {
+public class TaskArray1 {
     public static void main(String[] args) {
 
 
