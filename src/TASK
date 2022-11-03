@@ -1,0 +1,24 @@
+public class txt{
+public static void main(String[] args){
+
+String[] data={	"Ahmet","Fizik",
+		"Sengul","Kimya",
+		"Hakan","Matematik",
+		"Feraye","Biyoloji",
+		"Cengiz","Felsefe",
+		"Sezen","Bilgisayar",
+		"Hasan","Fizik",
+		"Sezgin","Biyoloji"};
+
+	for(int i=0; i<data.length; i+=2){
+	
+	if(i==0){
+	System.out.println("AdI\tBOLUMU");
+	}
+	System.out.printf("%s\t%s\n",data[i],data[i+1]);
+	
+	}
+
+		
+}
+}
