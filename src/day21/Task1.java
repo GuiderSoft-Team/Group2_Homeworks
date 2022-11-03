@@ -19,7 +19,5 @@ public class Task1 {
         for (int i = 0; i < data.length-1; i+=2) {
             System.out.println(data[i]+"\t"+data[i+1]);
         }
-
-
     }
 }
