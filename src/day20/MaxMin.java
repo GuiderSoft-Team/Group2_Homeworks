@@ -14,31 +14,27 @@ public class MaxMin {
          */
 
 
+        System.out.println("lütfen 10 adet sayı giriniz :");
         Scanner scan = new Scanner(System.in);
-
-        int min = 0;  int max = 0 ;
-
         int [] sayilar = new int[10];
+        for (int i = 0; i < sayilar.length ; i++) {
+            System.out.println((i+1+". sayı :"));
+            sayilar [i] = scan.nextInt();
 
+        }
+        int min = sayilar [0];
+        int max = sayilar[0];
 
-        for(int i = 0; i < 10; i++)
-        {
-            System.out.print("bir adet sayı girip entera basınız :");
-            sayilar[i] = scan.nextInt();
-            if(i< min) {
-                max = sayilar[i];
-                min = sayilar[i];
+        for (int i = 0; i < sayilar.length ; i++) {
+            if (min>sayilar[i]){
+                min=sayilar[i];
             }
-            if(sayilar[i] > max) {
-                max = sayilar[i];
-            }
-            if(sayilar[i] < min) {
-                min = sayilar[i];
+            if (max<sayilar[i]){
+                max=sayilar[i];
             }
         }
-        System.out.println("Dizinin en büyük elemanı = " + max);
-        System.out.println("Dizinin en kucuk elemanı = " + min);
-
+        System.out.println("en büyük sayi"+max);
+        System.out.println("en küçük sayi"+min);
     }
 }
 
