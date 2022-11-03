@@ -19,7 +19,9 @@ public class MaxMin {
         for (int i = 0; i < numbers.length ; i++) {
             if(numbers[i]>max){
                 max=numbers[i];
-            } else if (numbers[i]<min) {
+            }if (numbers[i]<min) {
+                //hier "else if "kann und wird falsch. da nach dem die bedingungen für das erste if erfüllt ist,
+                // wird bei einem else if nicht weiterdurchgeführt
                 min=numbers[i];
             }
         }
