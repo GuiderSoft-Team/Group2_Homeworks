@@ -28,7 +28,7 @@ public class Task {
 
 
         }
-        System.out.println(data);
+
 
     }
 }
