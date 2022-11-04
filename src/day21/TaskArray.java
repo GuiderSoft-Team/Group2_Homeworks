@@ -27,8 +27,9 @@ public class TaskArray {
 
             for (int i = 0; i < data.length; i += 2) {
                // System.out.print("\t"+data[i] + "\t\t\t\t" + data[i + 1]);
-                System.out.printf("\t %s\t\t\t%s",data[i],data[i+1]);
-                System.out.println();
+               // System.out.printf("\t %s\t\t\t%s",data[i],data[i+1]);
+
+                System.out.println("\t"+data[i]+"\t\t\t"+data[i+1]);
         }
 
 
