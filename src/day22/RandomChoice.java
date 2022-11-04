@@ -1,6 +1,5 @@
 package day22;
 
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -33,21 +32,19 @@ public class RandomChoice {
         int bSec= randomCars.nextInt(50000,80000);
         int cSec= randomCars.nextInt(100000,150000);
 
-
-        int dizi[] = new int[cars.length];
         Scanner input = new Scanner(System.in);
         System.out.print("Seçeceğiniz Aracın Sıra Numarasını Girin:");
 
-        for (int j = 0; j < dizi.length; j++) {
-            dizi[j] = input.nextInt();
+        for (int j = 1; j < cars.length; j++) {
+            j = input.nextInt();
 
-            if (dizi[j]<3){
-                System.out.printf("Seçtiğiniz araba   %s, fiyatı %d. İyi günlerde kullanın.", cars[dizi[j]], aSec);
-            } else if (dizi[j]>2 & dizi[j]<5) {
-                System.out.printf("Seçtiğiniz araba   %s, fiyatı %d. İyi günlerde kullanın.", cars[dizi[j]], bSec);
+            if (j<3){
+                System.out.printf("Seçtiğiniz araba   %s, fiyatı %d. İyi günlerde kullanın.", cars[j-1], aSec);
+            } else if (j>2 & j<5) {
+                System.out.printf("Seçtiğiniz araba   %s, fiyatı %d. İyi günlerde kullanın.", cars[j-1], bSec);
             }
-            else if (dizi[j]>4 & dizi[j]< cars.length ){
-                System.out.printf("Seçtiğiniz araba   %s, fiyatı %d. İyi günlerde kullanın.", cars[dizi[j]], cSec);
+            else if (j>4 & j<cars.length+1 ){
+                System.out.printf("Seçtiğiniz araba   %s, fiyatı %d. İyi günlerde kullanın.", cars[j-1], cSec);
             }
             else {
                 System.out.println("Dizin sayısı dışında bir sayı girdiniz ");
