@@ -27,9 +27,9 @@ public class Main {
             secim=imput.nextInt();
 
             switch (secim) {
-                case 1, 2, 3 -> System.out.printf("--Araç fiyatı: %d $--", priceOne);
-                case 4, 5 -> System.out.printf("--Araç fiyatı: %d $--", pricetwo);
-                case 6, 7 -> System.out.printf("--Araç fiyatı: %d $--", pricethree);
+                case 1, 2, 3 -> System.out.printf("Seçtiğiniz Araba %s, fiyatı %d. İyi Günlerde Kullanın",cars[secim],priceOne);
+                case 4, 5 -> System.out.printf("Seçtiğiniz Araba %s, fiyatı %d. İyi Günlerde Kullanın",cars[secim],pricetwo);
+                case 6, 7 -> System.out.printf("Seçtiğiniz Araba %s, fiyatı %d. İyi Günlerde Kullanın",cars[secim],pricethree);
                 default -> {
                     System.out.println("-".repeat(30));
                     System.err.print("Listeden bir araç Seçiniz\n");
