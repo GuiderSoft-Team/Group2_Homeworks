@@ -17,7 +17,7 @@ public class Main {
 
         do {
             for (int i = 0; i < cars.length; i++) {
-                if(i==0){
+                if(i==cars.length){
                     System.out.println("Fiyat almak için Model Seçiniz");
                 }
                 System.out.printf("%d - %s\n",i+1,cars[i]);
