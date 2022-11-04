@@ -28,7 +28,7 @@ public class Main {
                 case 6, 7 -> System.out.printf("Seçtiğiniz Araba %s, fiyatı %d. İyi Günlerde Kullanın",cars[secim-1],pricethree);
                 default -> {
                     System.out.println("-".repeat(30));
-                    System.err.print("Listeden bir araç Seçiniz\n");
+                    System.err.print("Lütfen listedeki bir aracı seçiniz\n");
                 }
             }
         }while (secim<=0 | secim>=8);
