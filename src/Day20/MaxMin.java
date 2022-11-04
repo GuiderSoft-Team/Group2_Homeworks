@@ -12,14 +12,10 @@ public class MaxMin {
 
 
         for (int i = 0; i <sayilar.length; i++) {
+        System.out.print((i+1)+". Sayıyı Giriniz: ");
+        sayilar[i]= input.nextInt();
 
-            for (int j = 1; j <=10; j++) {
-                System.out.print(j+". sayıyı giriniz: ");
-                i=j-1;
-                sayilar[i]= input.nextInt();
-            }
-
-            break;
+         
         }
         int enbuyuksayi=sayilar[0];
         int enkucuksayi=sayilar[0];
