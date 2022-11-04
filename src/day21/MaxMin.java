@@ -1,3 +1,5 @@
+package day21;
+
 import java.util.Scanner;
 
 public class MaxMin {
