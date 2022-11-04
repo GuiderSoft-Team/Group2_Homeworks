@@ -33,15 +33,12 @@ public class carsPrice {
         int secim = input.nextInt();
         System.out.println("Seçiminiz: " + cars[secim - 1]);
         if (secim >= 1 & secim <= 3) {
-            price = (int) (Math.round(Math.random() * 20000)) + 20000;
+            price = (int) (Math.round(Math.random() * 20000)) + 40000;
         } else if (secim >= 4 & secim <=5){
-            price = (int) (Math.round(Math.random() * 30000)) + 50000;
+            price = (int) (Math.round(Math.random() * 50000)) + 80000;
         }else{
-            price = (int) (Math.round(Math.random() * 50000)) + 100000;
+            price = (int) (Math.round(Math.random() * 100000)) + 150000;
         }
-        System.out.printf("Seçtiğiniz arava %s, Fiyatı=%d", cars[secim - 1], price);
-        System.out.println(" €");
-
-
+        System.out.printf("Seçtiğiniz araba %s, Fiyatı=%d, İyi Günlerde Kullanın", cars[secim - 1], price);
     }
 }
