@@ -16,13 +16,9 @@ public class Main {
         int secim=0;
 
         do {
-            for (int i = 0; i < cars.length; i++) {
-                if(i==cars.length){
-                    System.out.println("Fiyat almak için Model Seçiniz");
-                }
+            for (int i = 0; i < cars.length; i++) {                
                 System.out.printf("%d - %s\n",i+1,cars[i]);
             }
-
             System.out.print("Seçiminiz:? ");
             secim=imput.nextInt();
 
