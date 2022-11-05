@@ -21,8 +21,8 @@ public class Dortgen {
         int toplamAlan=kareninAlani+dikdortgeninAlani;
         int toplamCevre=kareninCevresi+dikdortgeninCevresi;
 
-        System.out.println("Toplam Alan = "+toplamAlan);
-        System.out.println("Toplam Çevre = "+toplamCevre);
+/*        System.out.println("Toplam Alan = "+toplamAlan);
+        System.out.println("Toplam Çevre = "+toplamCevre);*/
 
 
     }
