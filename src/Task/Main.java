@@ -1,0 +1,1 @@
+deşiklik yapıldı
