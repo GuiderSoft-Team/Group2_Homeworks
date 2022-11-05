@@ -4,30 +4,43 @@ import java.util.Scanner;
 
 public class Dortgen {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
-        System.out.print("Kare için kenar : ");
-        int kenar = input.nextInt();
-        System.out.print("Dikdörtgen için Kısa keanr : ");
-        int kisaKenar = input.nextInt();
-        System.out.print("Dikdörtgen için Uzun kenar : ");
-        int uzunKenar= input.nextInt();
+        /*
+            1. Klavyeden 3 adet girdi alınacaktır.
+                kenar:int       -> Karenin kenarı
+                kisaKenar:int   -> Dikdörtgenin kısa kenarı
+                uzunKenar:int   -> Dikdörtgenin uzun kenarı
+            2. alanHesapla(int k1, int k2):int  -> Metodu geliştirilecektir.
+            3. Tek bir metot (alanHesapla) iki kez çağırılarak hem karenin hem de
+            dikdörtgenin alanı hesaplanacaktır.
+            4. cevreHesapla(int k1,int k2):int  -> Metodu geliştirilecektir.
+            5. Tek bir metot (cevreHesapla) iki kez çağırılarak hem karenin hem de
+            dikdörtgenin çevresi hesaplanacaktır.
+            6. Elde edilen toplam alan hesaplanıp ekranda gösterilecektir.
+            7. Elde edilen toplam çevre ekranda gösterilecektir.
+         */
 
-        int kareninAlani=alanHesapla(kenar,kenar);
-        int kareninCevresi=cevreHesapla(kenar,kenar);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Karenin kenarını giriniz: ");
+        int kenar = scan.nextInt();
+        System.out.println("Dikdörtgenin kısa kenarını giriniz: ");
+        int kisaKenar = scan.nextInt();
+        System.out.println("Dikdörtgenin uzun kenarını giriniz: ");
+        int uzunKenar = scan.nextInt();
 
-        int dikdortgeninAlani=alanHesapla(kisaKenar,uzunKenar);
-        int dikdortgeninCevresi=cevreHesapla(kisaKenar,uzunKenar);
+        int kareAlan = alanHesapla(kenar,kenar);
+        int dikdortgenAlan = alanHesapla(kisaKenar,uzunKenar);
 
-        int toplamAlan=kareninAlani+dikdortgeninAlani;
-        int toplamCevre=kareninCevresi+dikdortgeninCevresi;
+        int kareCevre = cevreHesapla(kenar, kenar);
+        int dikdortgenCevre = cevreHesapla(kisaKenar, uzunKenar);
 
-        System.out.println("Toplam Alan = "+toplamAlan);
-        System.out.println("Toplam Çevre = "+toplamCevre);
-
+        System.out.println("Toplam alan: " + (kareAlan + dikdortgenAlan));
+        System.out.println("Toplam çevre: " + (kareCevre + dikdortgenCevre));
+        System.out.printf("Toplam alan %d\tToplam çevre %d\n",kareAlan,kareCevre);
 
     }
 
-    public static int alanHesapla(int k1,int k2){
+    public static int alanHesapla(int k1, int k2){
+
         return k1*k2;
     }
 
