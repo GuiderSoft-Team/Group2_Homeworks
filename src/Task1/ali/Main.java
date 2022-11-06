@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         
         /*
-        bu soruyu çözüldü
+        bu soruyu çözüldü..
         */
         
-        System.out.println("Deneme1");
+        System.out.println("ogr2");
     }
 }
