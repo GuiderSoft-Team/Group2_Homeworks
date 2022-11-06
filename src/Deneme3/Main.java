@@ -1,0 +1,2 @@
+task yapıldı
+düzeltildi
